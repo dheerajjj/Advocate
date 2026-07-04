@@ -68,7 +68,6 @@ async def request_otp(req: OtpRequest, db: Session = Depends(get_db)):
     return {
         "message": "OTP sent successfully",
         "user_exists": user_exists,
-        "otp": otp,  # Returned for local testing only
     }
 
 
